@@ -1,0 +1,16 @@
+/* Structure */
+
+table {
+    width: 100%;
+}
+
+.table-div {
+    width: 100%;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}

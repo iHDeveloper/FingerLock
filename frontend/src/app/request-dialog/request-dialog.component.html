@@ -1,0 +1,9 @@
+<h1>User: {{data.name}} </h1>
+<mat-divider></mat-divider>
+<mat-grid-list cols="3" rowHeight="9">
+    <mat-grid-tile [colspan]="1" [rowspan]="3"><button mat-raised-button color="primary" (click)="onAccept()">Accept</button></mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="3">
+        <h1>00:{{ (data.timeout / 1000) }}</h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="3"><button mat-raised-button color="warn" (click)="onReject()">Reject</button></mat-grid-tile>
+</mat-grid-list>

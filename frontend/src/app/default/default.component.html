@@ -1,0 +1,22 @@
+<!--Logo
+<div fxLayout fxLayoutAlign="center center" style="background-color:lightblue">
+    <img src="assets/fingerlock_logo.jpeg" width="20%" layout-align="center center"> Welcome Back!
+</div>
+-->
+
+
+<!--Logo Bar-->
+<div>
+    <mat-grid-list cols="3" rowHeight="100">
+        <!--Empty-->
+        <mat-grid-tile [colspan]="1" [rowspan]="3"></mat-grid-tile>
+        <!--Logo-->
+        <mat-grid-tile [colspan]="1" [rowspan]="3">
+            <img src="assets/fingerlock_logo.jpeg" width="60%" layout-align="center center">
+        </mat-grid-tile>
+        <!--Log out-->
+        <mat-grid-tile [colspan]="1" [rowspan]="3"> <button *ngIf="this.authService.isAuth()" mat-button (click)="logout()" style="background-color:lightcoral">LogOut</button> </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<router-outlet></router-outlet>
